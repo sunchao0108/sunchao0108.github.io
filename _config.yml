@@ -8,7 +8,7 @@ subtitle: 苟利国家生死以,岂因祸福避趋之
 description: 聚散无时,后会有期
 keywords: 
 author: dogballs
-language: zh-cn
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
