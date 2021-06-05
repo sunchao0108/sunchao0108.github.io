@@ -153,9 +153,11 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
+    type: livere
+    uid: MTAyMC80MzQxNy8xOTk1OA==
+    #type: disqus
     # Disqus shortname
-    shortname: ''
+    # shortname: ''
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
