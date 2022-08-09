@@ -1,5 +1,5 @@
 # Version of the configuration file
-version: 4.0.0
+version: 5.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
@@ -85,6 +85,12 @@ head:
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
         author: 
+        # Page publisher (optional)
+        # You should leave this blank for most of the time
+        publisher: 
+        # Page publisher logo (optional)
+        # You should leave this blank for most of the time
+        publisher_logo: 
         # Page images (optional)
         # You should leave this blank for most of the time
         image: 
@@ -108,20 +114,20 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: https://github.com/ppoffice/hexo-theme-icarus
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
             icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
+            url: https://creativecommons.org/
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
+            url: https://creativecommons.org/licenses/by/4.0/
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: https://github.com/ppoffice/hexo-theme-icarus
 # Article related configurations
 article:
     # Code highlight settings
@@ -135,17 +141,19 @@ article:
         fold: unfolded
     # Whether to show estimated article reading time
     readtime: true
+    # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
+    update_time: true
     # Article licensing block
     licenses:
         Creative Commons:
             icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
+            url: https://creativecommons.org/
         Attribution:
             icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
+            url: https://creativecommons.org/licenses/by/4.0/
         Noncommercial:
             icon: fab fa-creative-commons-nc
-            url: 'https://creativecommons.org/licenses/by-nc/4.0/'
+            url: https://creativecommons.org/licenses/by-nc/4.0/
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
@@ -167,10 +175,10 @@ donates:
         # URL to the "Afdian.net" personal page
     #    url: ''
     # Alipay donate button configurations
-    -
-        type: alipay
-        # Alipay qrcode image URL
-        qrcode: ''
+    #-
+    #    type: alipay
+    #    # Alipay qrcode image URL
+    #   qrcode: ''
     # "Buy me a coffee" donate button configurations
     #-
     #   type: buymeacoffee
@@ -189,10 +197,10 @@ donates:
         # Currency code
     #    currency_code: USD
     # Wechat donate button configurations
-    -
-        type: wechat
+    #-
+    #    type: wechat
         # Wechat qrcode image URL
-        qrcode: ''
+    #    qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
@@ -229,9 +237,9 @@ widgets:
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
-        gravatar:
+        gravatar: 
         # URL or path for the follow button
-        follow_link: 'https://github.com/sunchao0108'
+        follow_link: https://github.com/sunchao0108
         # Links to be shown on the bottom of the profile widget
         #social_links:
         #    Github:
@@ -289,13 +297,19 @@ widgets:
         # Where should the widget be placed, left sidebar or right sidebar
         position: right
         type: tags
+        # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
+        order_by: name
+        # Amount of tags to show. Will show all if not set.
+        amount: 
+        # Whether to show tags count, i.e. number of posts in the tag.
+        show_count: true
     # Google FeedBurner email subscription widget configurations
     #-
         # Where should the widget be placed, left sidebar or right sidebar
     #    position: right
     #    type: subscribe_email
         # Hint text under the email input
-    #    description: 
+    #    description:
         # Feedburner ID
     #    feedburner_id: ''
     # Google AdSense unit configurations
@@ -346,7 +360,7 @@ plugins:
         # Where on the screen the consent popup should display
         position: bottom-left
         # URL to your site's cookie policy
-        policyLink: 'https://www.cookiesandyou.com/'
+        policyLink: https://www.cookiesandyou.com/
     # Enable the lightGallery and Justified Gallery plugins
     gallery: true
     # Google Analytics plugin settings
@@ -386,8 +400,8 @@ plugins:
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
     # Name or URL template of the JavaScript and/or stylesheet CDN provider
-    cdn: loli
+    cdn: jsdelivr
     # Name or URL template of the webfont CDN provider
-    fontcdn: loli
+    fontcdn: ustc
     # Name or URL of the fontawesome icon font CDN provider
-    iconcdn: loli
+    iconcdn: fontawesome
