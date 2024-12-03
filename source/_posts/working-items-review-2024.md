@@ -49,6 +49,7 @@ compose中显示markdown文本内容，定制了几个有意思的内容。
 * 弹窗卡顿可能是因为未及时拦截已消费的事件
 * Android studio看不到AAR的源码问题不知道官方解决没，临时方案是更改一个Gradle属性或者更改studio的一个设置。
 * compose的ConstraintLayout使用IntrinsicSize有bug，不知道这个issue现在修复了没。
+* kotin的空安全不是绝对的安全，在调用java代码或者Gson生成的数据类时会有例外情况。
 * UID为system的系统应用不能访问外置存储。
 
 
