@@ -80,3 +80,7 @@ services:
 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 
 暂时先记录这么多
+
+#### Update 2024.12.03
+
+看视频教程应该把整个完整的视频全都看一遍，有个整体了解，因为有些步骤的方案是临时的，最终会被后面的替换掉。反正也不可能一遍就掌握了，然后再跟着做，这样可以少走弯路。

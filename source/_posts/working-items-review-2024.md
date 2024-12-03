@@ -43,11 +43,12 @@ compose中显示markdown文本内容，定制了几个有意思的内容。
 另外一个是检测输入的文本中是否含有带link item的table，有的话需要更改markdown内部TextView的MovementMethod, 避免link无法点击的问题。还不能直接修改，会影响a11y。
 
 
-##杂项心得
+## 杂项心得
 * 非主线程的资源占用也会导致UI卡顿
 * 文字转语音服务可以通过官方TextToSpeechService自定义实现
 * 弹窗卡顿可能是因为未及时拦截已消费的事件
 * Android studio看不到AAR的源码问题不知道官方解决没，临时方案是更改一个Gradle属性或者更改studio的一个设置。
+* compose的ConstraintLayout使用IntrinsicSize有bug，不知道这个issue现在修复了没。
 * UID为system的系统应用不能访问外置存储。
 
 
