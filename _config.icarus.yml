@@ -161,6 +161,7 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
+# there are embedded ads in livere
     type: livere
     uid: MTAyMC80MzQxNy8xOTk1OA==
     #type: disqus
