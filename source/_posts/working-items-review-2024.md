@@ -1,7 +1,5 @@
 ---
 title: 2024回顾笔记
-thumbnail: /images/leaves.jpg
-cover: /images/leaves.jpg
 date: 2024-11-11 11:11:11
 tags: 工作
 ---
@@ -12,7 +10,7 @@ tags: 工作
 
 ## 编译
 
-* 清理BuildSrc：任何buildSrc下的更改都会导致整个项目的全量编译，清理该目录下的不必要内容，例如移除依赖管理放到version catalog中。
+* 清理BuildSrc：任何buildSrc下的更改都会导致整个项目的全量编译，清理该目录下的不必要内容，例如移除依赖管理放到version catalog中
 * 使用增量编译：在编译时尽量只重新编译修改过的文件，而不是整个项目，可以节省大量的编译时间。
 * 使用构建缓存：利用构建缓存工具如Gradle Build Cache或Buck等，可以加快编译速度。
 * 使用多线程编译：在编译时使用多线程可以加快编译速度，可以在编译配置中设置并发编译数。
@@ -46,13 +44,18 @@ compose中显示markdown文本内容，定制了几个有意思的内容。
 另外一个是检测输入的文本中是否含有带link item的table，有的话需要更改markdown内部TextView的MovementMethod, 避免link无法点击的问题。还不能直接修改，会影响a11y。
 
 
+## Google issues
+经历浅的时候不了解，后来发现原来官方发布的东西也是有bug的，我还以为只有我这样的会写bug，记录下目前遇到的Google的bug以便追踪：
+
+* Mac Android Studio看不到aar依赖库的源码问题 https://issuetracker.google.com/issues/247991770
+* Compose的共享元素动画问题，这个没人提我自己提了一个 https://issuetracker.google.com/issues/433326689
+* Compose的ConstraintLayout使用IntrinsicSize问题(已修复) https://issuetracker.google.com/issues/220527863
+* kotlin的空安全不是绝对的安全，在调用java代码或者Gson生成的数据类时会有例外情况。
+
 ## 杂项心得
-* 非主线程的资源占用也会导致UI卡顿
-* 文字转语音服务可以通过官方TextToSpeechService自定义实现
-* 弹窗卡顿可能是因为未及时拦截已消费的事件
-* Android studio看不到AAR的源码问题不知道官方解决没，临时方案是更改一个Gradle属性或者更改studio的一个设置。
-* compose的ConstraintLayout使用IntrinsicSize有bug，不知道这个issue现在修复了没。
-* kotin的空安全不是绝对的安全，在调用java代码或者Gson生成的数据类时会有例外情况。
+* 非主线程的资源占用也会导致UI卡顿。
+* 文字转语音服务可以通过官方TextToSpeechService自定义实现。
+* 弹窗卡顿可能是因为未及时拦截已消费的事件。
 * UID为system的系统应用不能访问外置存储。
 
 

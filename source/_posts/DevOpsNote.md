@@ -1,7 +1,5 @@
 ---
 title: Devops学习总结
-thumbnail: /images/sunGarden.jpg
-cover: /images/sunGarden.jpg
 date: 2024-11-15 12:59:39
 tags: 工作
 ---
