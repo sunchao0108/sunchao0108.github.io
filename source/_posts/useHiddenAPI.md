@@ -26,7 +26,7 @@ tags: 工作
 * 最新版本的gradle和Android studio已经没有.iml文件了，使用这种方式只能用旧版本的IDE和gradle
 * 多个应用模块结构不同，需要多套脚本代码。
 
-### 第三种方式，framework 打jar包给app
+### framework 打jar包给app
 fw可以把需要的隐藏接口包装一层打成jar包给app使用
 
 * 麻烦，一般这类工作都是fw人员去做，app和fw通常是不同的team，app需要哪些接口随着项目推进可能会不断增加，沟通成本高。
