@@ -1,5 +1,5 @@
 ---
-title: scriptForToken
+title: Figma token转换脚本
 date: 2025-08-16 21:33:18
 tags: 工作
 ---
