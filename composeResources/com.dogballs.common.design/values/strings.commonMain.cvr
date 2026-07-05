@@ -1,0 +1,8 @@
+version:0
+plurals|updated_days_ago|ONE:VXBkYXRlZCB5ZXN0ZXJkYXk=,OTHER:VXBkYXRlZCAlZCBkYXlzIGFnbw==
+plurals|updated_weeks_ago|ONE:VXBkYXRlZCAlZCB3ZWVrIGFnbw==,OTHER:VXBkYXRlZCAlZCB3ZWVrcyBhZ28=
+string|feed|RmVlZA==
+string|home|T2NlYW5QbGF5ZXI=
+string|label_filters|ZmlsdGVy
+string|local|TG9jYWw=
+string|profile|UHJvZmlsZQ==
